@@ -1,0 +1,16 @@
+{
+  "name": "escape-film",
+  "version": "1.0.0",
+  "description": "An anime-style escape scene drawn 100% in code and rendered to MP4 with ffmpeg.",
+  "main": "render.js",
+  "private": true,
+  "scripts": {
+    "check": "node scripts/check-setup.js",
+    "render": "node render.js",
+    "test:3s": "node scripts/run.js 3",
+    "render:15s": "node scripts/run.js 15",
+    "verify": "node scripts/verify-determinism.js"
+  },
+  "engines": { "node": ">=18" },
+  "dependencies": { "@napi-rs/canvas": "^0.1.0" }
+}
